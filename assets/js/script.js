@@ -97,6 +97,9 @@ $(function () {
 
 	function statsChart(hero) {
 		var options = {
+			animationEnabled: true,
+			animationDuration: 2000,
+			backgroundColor: null,
 			theme: 'dark2',
 			title: {
 				text: `Estadísticas de ${hero.name}`,
