@@ -54,7 +54,7 @@ $(function () {
 	
 	function newCard(hero) {
 		let card = `
-    <div class="card pb-2 text-bg-dark bg-gradient g-0 shadow w-100">
+    <div class="card pb-2 bg-black text-white g-0 shadow w-100">
                 <div class="row">
                     <div class="col-md-5">
                         <img src="${hero.image.url}" class="img-fluid rounded-start"/>
