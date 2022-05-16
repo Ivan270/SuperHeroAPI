@@ -16,7 +16,7 @@
 		<nav class="navbar navbar-dark navbar-expand-lg bg-danger bg-gradient py-1 align-middle shadow">
 			<div class="container-fluid">
 				<a class="navbar-brand py-1" href="#">
-					<img src="assets\img\sh2.jpg" width="40px" />
+					<img src="assets\img\sh2.jpg" width="50px" />
 				</a>
 				<button
 					class="navbar-toggler"
@@ -39,7 +39,6 @@
 								role="button"
 								data-bs-toggle="dropdown"
 								aria-expanded="false"
-								style="font-size: 13px"
 							>
 								Mas sobre SuperHero Api
 							</a>
@@ -73,18 +72,17 @@
 			<header class="hero-section pt-4">
 				<div>
 					<img
-						class="mx-auto d-block rounded shadow"
+						class="mx-auto d-block img-fluid px-2"
 						src="assets\img\sh1.jpg"
-						width="40%"
 					/>
 				</div>
 			</header>
 			<section class="container-fluid pt-3 mb-2 text-white">
 				<div class="row">
 					<div
-						class="form w-50 justify-content-center col-md-6 mx-auto text-center"
+						class="form w-75 justify-content-center col-md-6 mx-auto text-center"
 					>
-						<h4 id="form_title" style="text-shadow: 2px 2px rgb(88, 88, 88);">Encuentra tu SuperHero</h4>
+						<h2 id="form_title" style="text-shadow: 2px 2px rgb(88, 88, 88);">Encuentra tu SuperHero</h2>
 						<div class="mb-3">
 							<label for="exampleInputEmail1" id="form-label" class="pb-2"
 								>Ingresa el número ID del SuperHero a buscar</label
@@ -103,7 +101,7 @@
 						<button
 							id="btn-buscar"
 							type="submit"
-							class="btn btn-danger btn-block mb-3"
+							class="btn btn-lg btn-danger btn-block mb-3"
 						>
 							Buscar
 						</button>
@@ -111,20 +109,15 @@
 				</div>
 			</section>
 			<section
-				class="container row mx-auto"
+				class="container-fluid row mx-auto w-75"
 			>
-				<div
-					id="heroId"
-					class="container justify-content-center col-12 col-md-6"
-				></div>
-				
-					<div
-					id="chartContainer"
-					class="container d-block col-12 col-md-6 my-2"
-					style="width: 600px"
-				></div>
-				
-				
+				<div class="container-fluid col-12 col-lg-6 pb-2">
+					<div id="heroId"></div>
+				</div>
+					
+				<div class="container-fluid col-12 col-lg-6">
+					<div id="chartContainer"></div>
+				</div>
 			</section>
 		</div>
 

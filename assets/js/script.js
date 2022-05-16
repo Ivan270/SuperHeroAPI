@@ -2,13 +2,13 @@ let heroStats_arr = [];
 $(function () {
 	$('#btn-buscar').click(function () {
 		buscarHero();
-		$('#title').fadeOut(500);
-		$('#title').fadeIn(500);
+		$('#form-title').fadeOut(600);
 		$('#form-label').fadeOut(750);
+		$('#form-title').fadeIn(600);
 		$('#form-label').fadeIn(750);
-		$('#form_title').fadeOut(500);
-		$('#form_title').fadeIn(500);
+		$('#form_title').fadeOut(600);
 		$('#form-label').fadeOut(750);
+		$('#form_title').fadeIn(600);
 		$('#form-label').fadeIn(750);
 	});
 
@@ -54,24 +54,24 @@ $(function () {
 	
 	function newCard(hero) {
 		let card = `
-    <div class="card my-2 pe-1 mx-2 pb-2 text-bg-dark bg-gradient g-0 shadow">
+    <div class="card pb-2 text-bg-dark bg-gradient g-0 shadow w-100">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-5">
                         <img src="${hero.image.url}" class="img-fluid rounded-start"/>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-7">
                         <div class="card-header font-monospace">Héroe ID: ${hero.id}</div>
                         <div class="card-title">
                             <h5 class="">Nombre: ${hero.name}</h5>
                         </div>
                         <ul class='list-group list-group-flush fs-6'>
-                            <li class="list-group-item text-bg-warning" style="font-size: 11px">Conexiones: ${hero.connections['group-affiliation']}</li>
-                            <li class="list-group-item text-bg-warning" style="font-size: 11px">Publicado por: ${hero.biography.publisher}</li>
-                            <li class="list-group-item text-bg-warning" style="font-size: 11px">Ocupación: ${hero.work.occupation}</li>
-                            <li class="list-group-item text-bg-warning" style="font-size: 11px">Primera aparición: ${hero.biography['first-appearance']}</li>
-                            <li class="list-group-item text-bg-warning" style="font-size: 11px">Altura: ${hero.appearance.height[1]}</li>
-                            <li class="list-group-item text-bg-warning" style="font-size: 11px">Peso: ${hero.appearance.weight[1]}</li>
-                            <li class="list-group-item text-bg-warning" style="font-size: 11px">Alias: ${hero.biography.aliases}</li>
+                            <li class="list-group-item text-bg-warning" style="font-size: 15px">Conexiones: ${hero.connections['group-affiliation']}</li>
+                            <li class="list-group-item text-bg-warning" style="font-size: 15px">Publicado por: ${hero.biography.publisher}</li>
+                            <li class="list-group-item text-bg-warning" style="font-size: 15px">Ocupación: ${hero.work.occupation}</li>
+                            <li class="list-group-item text-bg-warning" style="font-size: 15px">Primera aparición: ${hero.biography['first-appearance']}</li>
+                            <li class="list-group-item text-bg-warning" style="font-size: 15px">Altura: ${hero.appearance.height[1]}</li>
+                            <li class="list-group-item text-bg-warning" style="font-size: 15px">Peso: ${hero.appearance.weight[1]}</li>
+                            <li class="list-group-item text-bg-warning" style="font-size: 15px">Alias: ${hero.biography.aliases}</li>
                         </ul>
                         
                     </div>
